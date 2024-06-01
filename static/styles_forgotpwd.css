@@ -1,0 +1,82 @@
+/* styles_forgotpwd.css */
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87afea; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.forgot-box {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007bff; /* Blue header */
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: -15px;
+    color: #fff; /* White text color */
+}
+
+input[type="email"] {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin-top: 10px; /* Adjust margin-top to match other elements */
+    background-color: orange;
+    color: #fff; /* White text */
+    font-family: Montserrat, sans-serif; /* Set font-family */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="email"]:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px lightskyblue; /* Add box-shadow on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px; /* Adjust margin-top to match other buttons */
+    background-color: black; /* Orange button */
+    color: #fff;
+    font-family: Montserrat, sans-serif; /* Set font-family */
+    border: 1px solid #87afea; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff; /* Darker shade of orange on hover */
+}
+
+.tagline {
+    text-align: center;
+    color: #fff; /* White text color */
+    font-size: 14px; /* Smaller font size */
+    margin-top: 10px; /* Add margin to separate from other elements */
+}

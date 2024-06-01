@@ -1,0 +1,224 @@
+/*body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.loading {
+    display: none;
+    margin-top: 10px;
+    font-style: italic;
+    color: #888;
+}*/
+/* Add this CSS for the new email section */
+/*#email-section {
+    margin-top: 20px;
+}
+
+#email-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#email-section label {
+    margin-top: 10px;
+}
+
+#email-section input,
+#email-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#email-section button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #28a745; /* Green color for the "Send Email" button */
+    /*color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#email-section button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}*/
+
+body {
+    font-family: 'Arial', 'Georgia';
+    background-color:black;
+    color: #fff;
+    margin: 10 px;
+    padding:10 px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: rgba(13, 102, 218, 0.1);
+    box-shadow: 0 0 30px white;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-size: 18px;
+}
+/* ... (Previous CSS) ... */
+
+/* Improving visibility for language options */
+select#target_language {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color:rgb(47, 149, 238);
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Changing background color for better contrast */
+#target_language option {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 16px;
+}
+
+/* ... (Remaining CSS) ... */
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color:rgb(132, 179, 221);
+    color: #fff;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: black;
+    border: 60 px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(208, 206, 212, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.loading {
+    display: none;
+    margin-top: 15px;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Styles for the new email section */
+#email-section {
+    margin-top: 30px;
+    border-top: 2px solid #fff;
+    padding-top: 30px;
+}
+
+#email-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+#email-section label {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+#email-section input,
+#email-section textarea {
+    font-size: 16px;
+}
+
+#email-section button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #28a745;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}

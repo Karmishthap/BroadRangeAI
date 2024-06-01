@@ -1,0 +1,76 @@
+/* styles_reset.css */
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87afea; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: black; /* White background */
+    border-radius: 10px; /* Increased border-radius for softer edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-heading {
+    text-align: center;
+    color: #007bff; /* Blue header */
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+.tagline {
+    text-align: center;
+    color:lightblue; /* Dark gray text color */
+    font-size: 14px;
+    margin-bottom: 20px; /* Add some space below the tagline */
+}
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* White text color */
+}
+
+input[type="password"] {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin-top: 2px; /* Adjust margin-top to match other elements */
+    background-color: #ff7f0e; /* Orange background */
+    color: #fff; /* White text */
+    font-family: Montserrat, sans-serif; /* Set font-family */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="password"]:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px lightskyblue; /* Add box-shadow on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px; /* Adjust margin-top to match other buttons */
+    background-color: black; /* Orange button */
+    color: #fff;
+    font-family: Montserrat, sans-serif; /* Set font-family */
+    border: 1px solid #87afea; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff; /* Darker shade of orange on hover */
+}

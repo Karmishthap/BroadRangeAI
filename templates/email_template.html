@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Query</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='email_template_style.css') }}">
+</head>
+<body>
+    <header style="background-color: #f5f5dc; /* Beige background */
+    color: #333; /* Dark text color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(231, 13, 13, 0.1);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 4px solid white;
+    padding: 10px;"> 
+        <div class="logo-container" style="display: flex;
+        align-items: center;">
+            <div class="login-logo">
+                <img src="https://rvu.edu.in/wp-content/themes/rvu/images/rvu-logo.png" alt="Login Logo" style="max-height: 50px;">
+            </div>
+
+            <div class="logo" style=" max-height: 50px;
+            margin-left: 20px;">
+                <img src="https://static.wixstatic.com/media/9ba547_f7c0ef7b31e2498e8b0e819ae7986fa1~mv2.jpg/v1/fill/w_85,h_79,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/BroadrangeAI_logo.jpg" alt="Your Logo" style="max-height: 50px;">
+            </div>
+        </div>
+        <div class="heading" style="flex-grow: 1;text-align: center;">
+            <h2 style="flex-grow: 1;text-align: center;">Multilingual URL ChatBot</h2>
+        </div>        
+    </header>
+    <div class="container" style="width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <!-- <h2>URL's Title:</h2>
+        <p>[Title of the YouTube Video]</p> -->
+
+        <h2 style="color: #555;
+        margin-top: 20px;">URL:</h2>
+        <p id="url" style="color: #666;
+        line-height: 1.6;">
+            <!-- <a href="[URL of the YouTube Video]">[URL of the YouTube Video]</a> -->
+            {{ url }}
+        </p>
+
+        <h2 style="color: #555;
+        margin-top: 20px;">Brief Description of the Video:</h2>
+        <p id="description" style="color: #666;
+        line-height: 1.6;">{{ description }}</p>
+
+        <h2 style="color: #555;
+        margin-top: 20px;">Question Asked:</h2>
+        <p id="question" style="color: #666;
+        line-height: 1.6;">{{ question }}</p>
+
+        <h2 style="color: #555;
+        margin-top: 20px;">Answer:</h2>
+        <p id="answer" style="color: #666;
+        line-height: 1.6;">{{ answer }}</p>
+    </div>
+
+    <div class="footer" style="margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    text-align: center;">
+        <p style="color: #666;
+        line-height: 1.6;">We hope you find this information helpful. Should you have any further inquiries or need assistance, feel free to reach out to us.</p>
+        <p style="color: #666;
+        line-height: 1.6;">Best regards,<br>
+        Multilingual URL ChatBot<br>
+        botmyurl@gmail.com</p>
+    </div>
+
+</body>
+</html>

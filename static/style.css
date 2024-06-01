@@ -1,0 +1,378 @@
+/* Resetting default styles for better consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; /* You can adjust the font-family as needed */
+}
+
+/* Body styles */
+/* Body styles */
+body {
+  
+    /* Previous styles... */
+  background-color: rgba(0, 0, 128, 0.6);
+  
+    /* Previous styles... */
+    background-color: rgba(0, 0, 128, 0.6); /* Navy blue with transparency */
+    /* Add your background image */
+    background-image: url('https://www.unite.ai/wp-content/uploads/2022/03/AI-marketing-tools.png');
+    /* Set background properties */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Overlay to maintain text readability */
+  
+   /* Navy blue with transparency */
+  color: lightblue; /* Text color */
+  line-height: 2; /* Line height for readability */
+  padding: 20px; /* Padding around the body content */
+  border: 5px dashed lightcyan; /* Dashed border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Subtle box shadow */
+  position: relative; /* Positioning context */
+  font-family: 'Montserrat', sans-serif; /* Professional and stylish font */
+  text-transform: uppercase
+}
+
+/* Additional styling for creativity */
+/* Create a logo using a pseudo-element */
+body::before {
+  content: "";
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  width: 100px; /* Adjust the width of the logo */
+  height: 100px; /* Adjust the height of the logo */
+  background-image: url('https://media.licdn.com/dms/image/D560BAQHRYN2nok5dVA/company-logo_200_200/0/1685798552420?e=1712188800&v=beta&t=JpGxp59Z9L8f8uxNUa5xgdV8ekung-Z8xnSwDrfl4Co'); /* Replace with your logo path */
+  background-size: cover; /* Adjust the background size */
+  background-position: center; /* Center the background image */
+  border-radius: 50%; /* Make it circular if needed */
+  z-index: 999; /* Ensure it's above other content */
+  /* Additional styling if necessary */
+
+}
+.logins img {
+  max-height: 30px;
+  position: absolute;
+  border-radius: 250%
+}
+/* Add this style for the login logo */
+.logins{
+  max-height: 30px;
+  margin-left: 110px;
+  margin-top: -10px;
+ 
+   /* Adjust the margin as needed to avoid overlapping */
+}
+
+
+
+body::after {
+  content: '';
+  position: absolute;
+  background-color: lightblue; /* Color for creative elements */
+  z-index: -1; /* Behind the content */
+}
+
+/* Creative elements */
+body::before {
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Circle */
+}
+
+body::after {
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Circle */
+}
+
+
+
+/* Container styles with subtle animation */
+/* Container styles with rotating emoji */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Emoji styles */
+.container::after {
+  content: '🤖'; /* Your chosen emoji */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px; /* Adjust the emoji size */
+  animation: rotateEmoji 2s linear infinite; /* Rotation animation */
+}
+
+/* Keyframes for the emoji rotation */
+@keyframes rotateEmoji {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg); /* Rotate 360 degrees */
+  }
+}
+
+
+/* Header styles */
+/* Header styles */
+h1 {
+  font-size: 3em; /* Adjust the font size for the header */
+  margin-bottom: 20px; /* Spacing below the header */
+  color:#336699; /* Header text color */
+  font-family: 'Montserrat', sans-serif; /* Professional and stylish font */
+  /* text-transform: uppercase; Uppercase text */
+  letter-spacing: 1px; /* Increased letter spacing */
+  text-shadow: px 8px 2px rgba(51, 102, 153, 0.5); /* Adding a subtle text shadow */
+}
+
+/* Emoji style */
+.emoji {
+  font-size: 1.5em; /* Adjust the font size for the emoji */
+  margin-left: 5px; /* Provide spacing between text and emoji */
+}
+
+
+p {
+  margin-bottom: 20px; /* Spacing below paragraphs */
+}
+
+/* Header styles */
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #336699;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(51, 102, 153, 0.5); /* Adjusted text shadow */
+}
+
+/* Emoji style */
+.emoji {
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+/* Styling for the button */
+/* Styling for the button */
+/* Styling for the button */
+button {
+  background-color: #4d8ed2;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 24px; /* Adjusted padding for larger button size */
+  border: 2px solid #4d8ed2; /* Added border */
+  border-radius: 8px;
+  font-size: 1.1em; /* Adjusted font size for better visibility */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; /* Professional and stylish font */
+  text-transform: uppercase
+
+}
+button:hover {
+  background-color: #033a75;
+  transform: translateY(4px); /* Push effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Styling for the input fields */
+input[type="text"],
+select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid #4d8ed2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transition for transform */
+}
+
+/* Pulsating animation on focus */
+input[type="text"]:focus,
+select:focus {
+  animation: pulsate 1s infinite alternate; /* Added pulsating animation */
+}
+
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+
+
+/* Styling for the transcript display */
+#transcript {
+  display: none;
+  margin-top: 10px; /* Spacing above the transcript */
+  padding: 10px;
+  border: 2px solid #4d8ed2; /* Professional blue border */
+  border-radius: 10px; /* Slightly increased border radius */
+  background-color:#3535b5eb; /* Professional blue background color */
+  box-shadow: 0 4px 4px white; /* Subtle shadow */
+  text-transform: none;
+}
+
+
+/* Styling for the email section */
+#email-section {
+  display: none;
+  margin-top: 20px; /* Spacing above the email section */
+  padding: 20px;
+  border: 1px solid #4d8ed2; /* Professional blue border */
+  border-radius: 8px; /* Slightly increased border radius */
+  background-color:black; /* Light background color */
+  font-family:sans-serif; /* Professional font */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input and textarea styles within the email section */
+#email-section input[type="email"],
+#email-section input[type="text"],
+#email-section textarea {
+  width: calc(100% - 0px); /* Adjusting width to accommodate padding and border */
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Button styles within the email section */
+#email-section button {
+  width: calc(100% - 22px); /* Adjusting width to accommodate padding and border */
+  background-color: #4d8ed2; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for button color change */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: relative; /* Position for pseudo-element */
+  padding-right: 30px; /* Add padding on the right for the emoji */
+}
+
+#email-section button:hover {
+  background-color: #033a75; /* Button background color on hover */
+}
+
+/* Mail emoji styling */
+#email-section button::after {
+  content: "\2709"; /* Unicode for mail emoji */
+  display: inline-block;
+  animation: rotate 2s linear infinite; /* Rotation animation */
+  position: absolute; /* Position the emoji */
+  top: 50%; /* Center vertically */
+  right: 10px; /* Adjust the position */
+  transform: translateY(-50%); /* Center the emoji vertically */
+}
+
+/* Keyframe animation for rotation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Styling for the About page navigation bar */
+.about-page {
+  background-color: #f5f5f5; /* Background color for the About page bar */
+  padding: 10px;
+  text-align: center;
+}
+
+.about-page a {
+  text-decoration:khaki;
+  color: #333; /* Link color */
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+
+.about-page a:hover {
+  color: #007bff; /* Link color on hover */
+}
+/* Styling for the question labels */
+
+/* Styling for the labels */
+label {
+  display: block; /* Display labels as block elements */
+  font-weight: bold; /* Make labels bold for emphasis */
+  margin-top: 15px; /* Add space between labels */
+  border: 1px solid #ccc; /* Add a border around labels */
+  padding: 10px; /* Add padding to labels */
+  border-radius: 6px; /* Rounded corners for labels */
+}
+
+/* Styling for the input elements and select */
+input[type="text"],
+select {
+  width: calc(100% - 0px); /* Adjust width to accommodate padding and border */
+  margin-bottom: 0px;
+  padding: 10px;
+  border: 1px solid #ccc; /* Add a border around inputs and selects */
+  border-radius: 6px; /* Rounded corners for inputs and selects */
+}
+
+.statement-box {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+/* Responsive font size for smaller screens */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading {
+  display: none;
+  font-size: 30px; /* Set the font size to 30px */
+}
+
+.loading::before {
+  content: '⌛'; /* Emoji for an hourglass */
+  display: inline-block;
+  font-size: 30px; /* Set the font size to 30px */
+  margin-right: 8px; /* Add some spacing between the emoji and the text */
+  animation: spin 1s linear infinite;
+}
+

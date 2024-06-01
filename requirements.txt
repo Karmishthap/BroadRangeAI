@@ -1,0 +1,13 @@
+Flask
+Werkzeug
+openai
+youtube_transcript_api
+langdetect
+translate
+langchain
+googletrans==4.0.0-rc1
+bcrypt
+Flask-SQLAlchemy
+datetime
+Flask-Mail
+Jinja2

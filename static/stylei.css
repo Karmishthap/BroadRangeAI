@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://i.gifer.com/J4o.gif');
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(4, 4, 33);
+    color:rgb(255, 187, 0);
+    box-shadow: 0 2px 5px rgba(231, 13, 13, 0.1);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 4px solid white;
+    padding: 10px; 
+}
+#home {
+    text-align: left;
+}
+
+.list-item {
+    margin-left: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+/* Add this style for the login logo */
+.login-logo {
+    max-height: 50px;
+    margin-right: 20px; /* Adjust the margin as needed to avoid overlapping */
+}
+
+
+
+.logo img {
+    max-height: 50px;
+}
+
+/* Add this style to position the login-logo */
+.login-logo img {
+    max-height: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+pre {
+    text-align: left;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+
+#team {
+    display: block;
+}
+
+#team h2 {
+    text-align: left;
+}
+
+.team-member {
+    text-align: left;
+    margin-bottom: 20px; /* Adjust as needed for spacing between team members */
+}
+
+.team-member .name {
+    font-weight: bold;
+}
+
+.team-member .designation {
+    font-style: italic;
+}
+
+.animated-heading {
+    text-align: center;
+    margin: 0 auto; /* Center the heading */
+}
+
+.animated-heading h1 {
+    position: relative;
+    left: -100%;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+header nav.main-nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    color:rgb(255, 187, 0);
+}
+
+.main-nav {
+    margin-bottom: 20px; 
+    border: 4px solid white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    margin-left:20px ;
+}
+
+.dropbtn {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(24, 3, 121);
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.main-nav ul li button {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    color: rgb(255, 187, 0);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main-nav ul li button:hover {
+    background-color: #ddd;
+}
+
+#loginBtn {
+    margin-left: 10px;
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: 900;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#headd {
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 10vh;
+    transform: translateY(-50%);
+}
+
+#loginBtn button {
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    color: rgb(255, 187, 0);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#loginBtn button:hover {
+    background-color: #000000;
+}
+
+#loginFormBox {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(241, 158, 4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    display: none;
+}
+
+#loginFormBox .form-group label {
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(0, 0, 0);
+    font-size: x-large;
+}
+
+#loginFormBox .form-group input[type="email"],
+#loginFormBox .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid #000000;
+}
+
+#loginFormBox .form-group input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #383737;
+    color: #fffdfd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loginFormBox .form-group button[type="submit"]:hover {
+    background-color: #383737;
+}
+
+#loginFormBox .form-group .container p {
+    line-height: 1.8;
+}
+
+#loginFormBox .form-group footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}
+
+.login-link{
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    color:#000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password i {
+    font-size: 18px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%; /* Adjust the width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(241, 158, 4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Use scroll bars for overflow */
+}
+
+.container pre {
+    white-space: pre-wrap;
+
+}
+
+/* Styling for the statement box */
+.statement-box {
+    max-width: 800px;
+    width: 100%;
+    background-color: #efa31f;
+    border: 2px solid #090101;
+    border-radius: 15px; /* Added border-radius for curved borders */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: content-box;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden; /* Ensure the border-radius works with overflow content */
+}
+
+/* Styling for infographic */
+.infographic {
+    float: left;
+    margin-right: 5px; /* Adjusted margin-right */
+}
+
+.infographic img {
+    max-width: 50%; /* Adjusted max-width for responsiveness */
+    height: auto ;
+    border-radius: 10px; 
+    opacity: 0.5;/* Add border-radius for curved borders on the image */
+}
+
+/* Styling for mission text */
+.mission-text {
+    font-size: 1em; /* Adjusted font size */
+    margin-top: 10px; /* Add some space between title and content */
+}
+
+/* Responsive font size for smaller screens */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.5em;
+    }
+
+    .mission-text {
+        font-size: 0.8em;
+         /* Adjusted space on smaller screens */
+    }
+
+    .infographic {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+/* Add creativity to images without disturbing alignment */
+
+/* Style for the first image */
+.first-image {
+    border: 0px solid #3498db; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 20%; /* Set a maximum width for the image */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition */
+     
+}
+  
+  .first-image:hover {
+    transform: rotate(10deg); /* Scale up on hover */
+  }
+  
+  /* Style for the second image */
+  .second-image {
+    border: 2px solid #e74c3c; /* Red border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 20%; /* Set a maximum width for the image */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition */
+    margin-left: 12%;
+      
+  }
+  
+  .second-image:hover {
+    transform: rotate(10deg); /* Rotate on hover */
+  }
+  
+  /* Style for the third image */
+  .third-image {
+    border: 2px solid #e74c3c; /* Red border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 25%; /* Set a maximum width for the image */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition */
+    margin-left: 12%;
+    margin-bottom: 10%;
+}
+  .third-image:hover {
+    transform: rotate(10deg);  /* Remove grayscale on hover */
+  }
+  .left-align {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+  }

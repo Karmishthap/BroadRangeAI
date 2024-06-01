@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_login.css') }}">
+    <style>
+        body {
+            background-image: url('https://i.gifer.com/J4o.gif'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            
+        }
+    </style>
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="login-heading">Login</h2>
+        <p class="tagline">Ready, Set, Login!</p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        <form action="/login" method="POST" onsubmit="return validateForm()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-forgot-links">Don't have an account? <span class="signup-link"><a href="/signup">Sign up</a></span></p>
+        <p class="signup-forgot-links"><span class="forgot-link"><a href="/forgot_password">Forgot password?</a></span></p>
+    </div>
+    
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            
+            if (email.trim() === "" || password.trim() === "") {
+                showAlert("Please enter email and password.");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+</body>
+</html>

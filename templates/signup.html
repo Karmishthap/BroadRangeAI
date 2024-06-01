@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_signup.css') }}">
+    <style>
+        body {
+            background-image: url('https://i.gifer.com/J4o.gif'); /* Specify the URL of your background image */
+            background-size: cover;
+            background-position: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2 class="signup-heading">Sign Up</h2>
+    <p class="tagline">Congratulations!!</p>
+    <form action="/signup" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+</body>
+</html>

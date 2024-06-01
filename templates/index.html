@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylei.css') }}">
+</head>
+<body>
+    <header> 
+        <div class="login-logo">
+            <img src="data:image/png;base64,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" alt="Login Logo">
+        </div>
+
+        <div class="logo">
+            <img src="https://static.wixstatic.com/media/9ba547_f7c0ef7b31e2498e8b0e819ae7986fa1~mv2.jpg/v1/fill/w_85,h_79,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/BroadrangeAI_logo.jpg" alt="Your Logo">
+        </div>
+        <div class="animated-heading">
+            <h2>Multilanguage URL</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="#home" onclick="showHome()">Home</a>
+                        <a href="#team" onclick="showTeam()">Our Team</a>
+                        <a href="#field" onclick="showField()">Where we can help?</a>
+                    </div>
+                </li>
+                <!-- <li id="loginBtn">
+                    <button type="button" class="btn btn-light">LOGIN</button>
+                </li> -->
+                <button onclick="location.href='/chatbot'">GO to Chatbot</button>
+            </ul>
+        </nav>
+    </header>
+    <div class="statement-box">
+        <div class="infographic">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/647/757/original/smiling-teenage-boy-watching-funny-videos-on-internet-2d-isolated-illustration-guy-with-phone-flat-character-on-cartoon-background-colorful-editable-scene-for-mobile-website-presentation-vector.jpg" alt="Infographic">
+        </div>
+        <div class="content">
+            <h1 id="headd">
+                <b>Mission</b>
+            </h1>
+            <div class="mission-text">
+                <p><b>Paste, Play, Discover :: Your Multilingual Video Adventure!</b></p>
+                <p><i>Seamlessly explore YouTube videos with our platform. From translating content to accessing detailed transcripts, asking questions, and even breaking language barriers, we've got it all. Simply paste your YouTube URL and open the door to a world of multilingual possibilities</i></p>
+            </div>
+        </div>
+    </div>  
+    
+    
+    
+<div class="container mt-4" id="home" style="display:none;">
+<h2>Home</h2>
+<span>
+<pre>
+<b>What does our Platform provide</b>
+Welcome to our all-in-one platform! If you ever find yourself wanting to understand a video in a different language, have questions about the content, or need to share video information via email or want to understand which particular event takes place at a particular time in a YouTube video, you're in the right place. Our website offers a seamless 4-in-1 solution for all your needs.
+
+<b>How Our Website Works</b>
+
+<div class="list-item">Retrieve Transcripts:
+1)Simply insert the URL of the YouTube video into the designated box.
+2)Click on "Process" to obtain accurate transcripts with timestamps.
+3)Print the transcripts for easy reference.
+<img class="first-image" src="https://cdn4.iconfinder.com/data/icons/cryptocurrency-and-blockchain-technology-1/64/timestamp-date-datestamp-stamp-time-1024.png" alt="Description of the first image">
+
+</div>
+
+<div class="list-item">Ask Questions:
+1)Input your questions about the video in the question box.
+2)Select your preferred language for the answers.
+<img class="second-image" src="https://clipground.com/images/what-happened-clipart-5.jpg" alt="Description of the second image">
+</div>
+
+<div class="list-item">Email Functionality:
+1)Need to share the obtained information? We've got you covered.
+2)The platform automatically generates a subject for your question and the corresponding answer.
+3)Enter the desired email ID, and your email is ready to be sent.
+<img class="third-image" src="https://media.licdn.com/dms/image/C4D12AQE9sYinBBjRMw/article-cover_image-shrink_720_1280/0/1648039561317?e=2147483647&v=beta&t=Mn3PkAORahXeZm0SUX1XANA1uN0u21ZpEx4BTJjYtBg" alt="Description of the third image">
+</div>
+
+Experience the ease of accessing YouTube transcripts, getting informative answers, and seamlessly translating content – all in one place!
+</pre>
+</div>
+<div class="container mt-4" id="team" style="display:none;">
+<h2>Our Team</h2>
+<div class="team-member">
+<p><span class="name"><h3><b>Talented students from RV University collaborated with BroadRange AI under the mentorship of Mr.Ramarao Kadiyala,the CEO of BroadRange AI to create this multilinguistic platform which assists people from diffrent states and countries connect better without hesitation of not understanding a youtube video which is in a different mother tongue </b></h3></span>
+</div>
+
+<div class="team-member">
+<p><span class="name">Mr.Ramarao Kadiyala</span> <span class="designation">(BroadRange AI)</span> - CEO of Broadrange AI</p>
+<p>Ramarao Kadiyala Sir's expert guidance empowered us to leverage Generative Ai effectively in crafting this platform. His leadership ensured the adoption of cutting-edge technologies for seamless functionality.</p>
+</div>
+
+<div class="team-member">
+<p><span class="name">Karmishtha Patnaik</span> <span class="designation">(RV University)</span> - Design & Front-end Expert:</p>
+<p>Karmishtha Patnaik's expertise in front-end development and design ensures an intuitive, visually appealing user interface. Her skill set greatly enhances the functionality of the querying feature.</p>
+</div>
+
+<div class="team-member">
+<p><span class="name">Akarsh Kumar Gowda</span> <span class="designation">(RV University)</span> - Backend Integration Specialist:</p>
+<p>Akarsh Kumar Gowda adeptly handled the backend Flask integration, enabling a robust API interface. His technical proficiency forms the backbone of our platform's functionality.</p>
+</div>
+
+<div class="team-member">
+<p><span class="name">Renu Bojja</span> <span class="designation">(RV University)</span> - Multilingual Translation Specialist:</p>
+<p>Renu Bojja's role in enabling multilingual translations for queries expands the platform's global accessibility. Her contribution ensures content can be accessed and understood by diverse audiences.</p>
+</div>
+
+<div class="team-member">
+<p><span class="name">Prem SP</span> <span class="designation">(RV University)</span> - Email Optimization Specialist:</p>
+<p>With a focus on optimizing email communications, Prem SP excels in seamlessly delivering well-answered and translated content to users' inboxes. His expertise ensures the efficient and effective dissemination of valuable information through email channels.</p>
+</div>
+</div>
+<div class="container mt-4" id="field" style="display:none;">
+<h2>How can we help</h2>
+<span class="left-align">
+    <b>1)Education and E-Learning:</b>
+    <p>Our platform can be used to enhance the learning experience by providing accurate transcripts with timestamps for YouTube videos.</p>
+  
+    <b>2)Content Creation and Video Production:</b>
+    <p>Content creators and video producers can benefit from our platform by easily obtaining transcripts for their videos.</p>
+  
+    <b>3)Language Learning:</b>
+    <p>Language learners can leverage our platform to practice listening skills by watching YouTube videos with accurate transcripts.</p>
+  
+    <b>4)Market Research and Social Media Analytics:</b>
+    <p>Businesses and market researchers can use our platform to analyze trends and sentiments expressed in YouTube videos.</p>
+  
+    <b>5)Accessibility and Inclusion:</b>
+    <p>Our platform promotes inclusivity by providing video content accessibility for individuals with hearing impairments.</p>
+  </span>
+</div> 
+
+    
+    <script src="{{ url_for('static', filename='scripti.js') }}"></script>
+</body>
+</html>

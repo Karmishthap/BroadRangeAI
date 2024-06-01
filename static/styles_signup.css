@@ -1,0 +1,112 @@
+/* CSS 1 with updated styles */
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87afea; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.container {
+    position: relative; /* Set the container as relative to position the logos */
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    background-color: black; /* White background */
+    border-radius: 10px; /* Increased border-radius for softer edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup-heading {
+    text-align: center;
+    color: #007bff; /* Blue header */
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 10px; /* Add some space below the heading */
+    animation: fadeInDown 1s ease; /* Animation for login heading */
+}
+.tagline {
+    text-align: center;
+    color: #fff; /* White text color */
+    font-size: 14px; /* Font size for the tagline */
+    margin-bottom: 20px; /* Add some space below the tagline */
+    animation: fadeInUp 1s ease; /* Animation for tagline */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    form {
+        margin-top: 20px;
+    }
+
+
+.caption {
+    color: #fff; /* White text color */
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 5px; /* Add some space below the caption */
+}
+
+
+
+label {
+    font-weight: bold;
+    color: #fff; /* White text color */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: orange;
+    color: #fff; /* White text */
+    font-family: Montserrat, sans-serif; /* Set font-family */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px lightskyblue; /* Add box-shadow on focus */
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px; /* Adjust margin-top to match other buttons */
+    background-color: black; /* Orange button */
+    color: #fff;
+    font-family: Montserrat, sans-serif; /* Set font-family */
+    border: 1px solid #87afea; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #007bff; /* Darker shade of orange on hover */
+}
